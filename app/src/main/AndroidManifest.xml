@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tenvence.wlanden">
+
+
+    <!-- ↓↓↓↓↓↓需要的用户权限↓↓↓↓↓↓ -->
+
+    <!-- 网络连接的权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- 获取网络状态的权限 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- 获取无线网状态的权限 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <!-- 获取改变无线网状态的权限 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+
+    <!-- 获取不锁屏的权限 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+
+    <!-- ↑↑↑↑↑↑需要的用户权限↑↑↑↑↑↑ -->
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/wlanden_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
